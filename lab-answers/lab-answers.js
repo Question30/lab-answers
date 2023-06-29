@@ -32,3 +32,12 @@ const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"];
 
 plantee[2] = 5001;
 console.log(plantee[2]);
+
+wolfy[3] = "Gotham City"
+console.log(wolfy[3]);
+
+dart.push("Hawkins");
+console.log(dart[dart.length -1]);
+
+wolfy.splice(0, 1 , "Gameboy");
+console.log(wolfy[0]);
