@@ -42,9 +42,50 @@
 // wolfy.splice(0, 1 , "Gameboy");
 // console.log(wolfy[0]);
 
-//=======Yell at the Ninjag Turtles===============
-const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// //=======Yell at the Ninjag Turtles===============
+// const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
 
-for (let turtle of ninjaTurtles) {
-    console.log(turtle.toUpperCase());
-}
+// for (let turtle of ninjaTurtles) {
+//     console.log(turtle.toUpperCase());
+// }
+
+//===============Methods Revisited====================
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 'Snatch', 'Fast and Furious'];
+
+//Console log the index of Titanic.
+console.log(favMovies[8]);
+
+//Use the .sort method
+console.log(favMovies.sort());
+
+
+//push "Guardians of the Galaxy".
+favMovies.push("Guardians of the Galaxy");
+
+//Use the method pop.
+favMovies.pop();
+console.log(favMovies);
+
+//Reverse the array.
+console.log(favMovies.reverse());
+
+//Use the shift method.
+favMovies.shift();
+console.log(favMovies);
+
+//unshift - what does it return?
+favMovies.unshift("Toy Story");
+console.log(favMovies);
+
+//splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained" instead of counting it yourself).
+
+favMovies.splice(favMovies.indexOf("Django Unchained"), 1, "Avatar");
+
+console.log(favMovies);
+
+//slice the last half of the array. (Challenge yourself and try to programatically determine the middle of the array rather than counting it and hard coding it.)
+let slicedArr = favMovies.slice(favMovies.length/2);
+console.log(slicedArr);
+
+//After running the above tasks, console.log the index of "Fast and Furious."
+console.log(favMovies.indexOf("Fast and Furious"));
